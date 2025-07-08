@@ -12,7 +12,7 @@ let submit = document.querySelector(".submitbtn")
 submit.addEventListener('click', loc()) 
 async function getweather(userlocation) {
 try {
-  const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=1986480656ec490d950204923202611&q=${userlocation}` ,
+  const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=1986480656ec490d950204923202611&q=${userlocation}` ,
     {
       mode: 'cors',
     }
